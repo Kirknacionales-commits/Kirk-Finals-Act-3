@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 — Box Model & Layouts</title>
+
+<style>
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.highlight {
+    color: #00bcd4;
+}
+
+/* Main Layout */
+.main-area {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Content */
+.content {
+    flex: 3;
+}
+
+/* Profile Card */
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Square Profile Image */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    object-fit: cover;
+    border: 3px solid #00bcd4;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* Profile Information */
+.profile-info h2 {
+    margin-top: 0;
+}
+
+.tagline {
+    color: #555;
+}
+
+.bio {
+    line-height: 1.5;
+}
+
+/* Contact Button */
+.contact-btn {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background-color: #0097a7;
+}
+
+/* Description */
+.description {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #e8f5f7;
+    padding: 20px;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #007c91;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    .main-area {
+        flex-direction: column;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header class="header">
+        <h1>IT Portfolio <span class="highlight">Lab 3</span></h1>
+    </header>
+
+    <!-- Main Area -->
+    <main class="main-area">
+
+        <section class="content">
+
+            <!-- Profile Card -->
+            <div class="profile-card">
+
+                <!-- Insert Your Square Image Here -->
+                <img src="C:\Users\TEMP.ADULAB.006\Documents\index.html\images\Max.png"
+                     alt="Kirk Nacionales Profile Picture"
+                     class="avatar">
+
+                <div class="profile-info">
+
+                    <h2>Kirk Nacionales</h2>
+
+                    <p class="tagline">
+                        <span class="highlight">Web Developer</span> & Student
+                    </p>
+
+                    <p class="bio">
+                        Kirk builds responsive webpages and cares about accessible design.
+                        This card demonstrates content, padding, border, and margin.
+                        He is willing to help and contribute his best in the IT society.
+                    </p>
+
+                    <button class="contact-btn">Contact</button>
+
+                </div>
+            </div>
+
+            <!-- About This Lab -->
+            <article class="description">
+                <h3>About this lab</h3>
+
+                <p>
+                    This section demonstrates the CSS box model: content, padding,
+                    border, and margin. Resize the browser to see layout changes.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="#">Module 9</a></li>
+                <li><a href="#">Module 10</a></li>
+                <li><a href="#">Module 12</a></li>
+            </ul>
+
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 — CSIT Lab</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
